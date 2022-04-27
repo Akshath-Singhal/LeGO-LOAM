@@ -75,6 +75,16 @@ extern const int groundScanInd = 7;
 // extern const float ang_bottom = 30.67;
 // extern const int groundScanInd = 20;
 
+
+
+//param for vel-64
+// extern const int N_SCAN = 64;
+// extern const int Horizon_SCAN = 1800;
+// extern const float ang_res_x = 0.2;
+// extern const float ang_res_y = 0.427;
+// extern const float ang_bottom = 24.9;
+// extern const int groundScanInd = 50;
+
 // VLS-128
 // extern const int N_SCAN = 128;
 // extern const int Horizon_SCAN = 1800;
@@ -101,7 +111,7 @@ extern const int groundScanInd = 7;
 // extern const float ang_bottom = 16.6+0.1;
 // extern const int groundScanInd = 15;
 
-extern const bool loopClosureEnableFlag = false;
+extern const bool loopClosureEnableFlag = true;
 extern const double mappingProcessInterval = 0.3;
 
 extern const float scanPeriod = 0.1;
@@ -129,7 +139,7 @@ extern const float nearestFeatureSearchSqDist = 25;
 extern const float surroundingKeyframeSearchRadius = 50.0; // key frame that is within n meters from current pose will be considerd for scan-to-map optimization (when loop closure disabled)
 extern const int   surroundingKeyframeSearchNum = 50; // submap size (when loop closure enabled)
 // history key frames (history submap for loop closure)
-extern const float historyKeyframeSearchRadius = 7.0; // key frame that is within n meters from current pose will be considerd for loop closure
+extern const float historyKeyframeSearchRadius = 20.0; // key frame that is within n meters from current pose will be considerd for loop closure
 extern const int   historyKeyframeSearchNum = 25; // 2n+1 number of hostory key frames will be fused into a submap for loop closure
 extern const float historyKeyframeFitnessScore = 0.3; // the smaller the better alignment
 
